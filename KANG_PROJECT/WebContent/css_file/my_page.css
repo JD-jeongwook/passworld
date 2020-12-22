@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Luckiest+Guy&display=swap');
+/*
+ font-family: 'Jua', sans-serif; - 글자 폰트
+font-family: 'Luckiest Guy', cursive; - 로고폰트
+#8BC0E8; - 연한 하늘색
+#6799FF; - 진한 하늘색
+#F8FFFF; - 배경 색 ( 엄청 연한 하늘색 )
+*/
+body {
+    background-color:#F8FFFF;
+}
+header {
+	display:inline-block;
+	margin-top:1em;
+}
+input {
+	outline: none;
+}
+section {
+	float:none;
+}
+#logo {
+    white-space: nowrap;
+    margin:0;
+    margin-left:1em;
+    margin-top:1em;
+    font-size:54px;
+    color:#8BC0E8;
+    text-decoration: none;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 5px 5px 10px #DDD;
+    padding:1em;
+	padding-bottom:0.5em;
+}
+#head_text {
+	text-align:center;
+	font-size:72px;
+    color:#8BC0E8;
+	font-family: 'Luckiest Guy', cursive;
+    text-shadow: 5px 5px 5px #DDD;
+    margin:0;
+}
+
+
+/*======================================= 랜덤여행사진 ===============================================*/
+
+#trip_pic {
+	width:600px;
+	height:375px;
+	margin:0 auto;
+	overflow: hidden;
+	border-radius: 15px;
+	margin-bottom: 30px;
+}
+#trip_pic img{
+	width:600px;
+	height:375px;
+}
+
+/*======================================= 내 정보 테이블 ===============================================*/
+
+table {
+	margin:0 auto;
+	font-family: 'Jua', sans-serif; 
+	border-spacing: 20px 20px;
+}
+
+th {
+	background:#6799FF;
+	color:white;
+	font-size: 42px;
+	border-radius: 25px;
+	border-spacing: 10px; 
+}
+td:first-child {
+	background:#8BC0E8;
+	color:white;
+	font-size: 22px;
+	text-align: center;
+	padding:13px;
+	border-radius: 15px;
+}
+td:last-child {
+	font-size:25px;
+}
+
+/*========================================이모티콘 관리================================================*/
+
+.fa-male {
+	color:blue;
+	font-size:35px;
+	float: left;
+}
+.fa-female {
+	color:#FF24A3;
+	font-size:35px;
+	float: left;
+}
+.fa-suitcase-rolling {
+/*	color:#872600;*/
+	float: left;
+	margin-top: 17px;
+	margin-left:3px;
+	font-size: 18px;
+}
+.gender {
+	margin-left:20px;
+}
+
+/*===================================================================================================*/
+
+.text_box {
+	height:30px;
+	width:250px;
+	border-radius: 15px;
+	padding-left:20px;
+	border:1px solid gray;
+}
+.text_phone {
+	height:30px;
+	width:148px;
+	border-radius: 15px;
+	padding-left:20px;
+	border:1px solid gray;
+}
+
+.last_tr td {
+	background: none;
+}
+.select_box {
+	padding : 5px 10px;
+	border-radius: 10px;
+}
+
+#address input {
+	margin-top:0.5em;
+    height:30px;
+    width:450px;
+    border-radius: 10px;
+    border:1px solid black;
+    outline: none;
+    padding-left:1em;
+}
+
+#post_search {
+	background:#8BC0E8;
+	font-family: 'Jua', sans-serif;
+	color:white;
+	width:100px; 
+	margin-left:0px;
+	padding-left: 5px;
+}
+.minus {
+	font-size: 12px;
+}
+tr:last-child input{
+	background:#8BC0E8; 
+	padding:10px;
+	border:none;
+	border-radius: 20px;
+	font-family: 'Jua', sans-serif;
+	color:white;
+	font-size: 30px;
+	margin-right: 20px;
+}
+#modify_button {
+	padding:10px 40px;
+}

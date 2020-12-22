@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Luckiest+Guy&family=Nanum+Pen+Script&display=swap');
+/*
+ font-family: 'Jua', sans-serif; - 글자 폰트
+font-family: 'Luckiest Guy', cursive; - 로고폰트
+font-family: 'Nanum Pen Script', cursive; - 자유게시판 폰트
+#8BC0E8; - 연한 하늘색
+#6799FF; - 진한 하늘색
+#F8FFFF; - 배경 색 ( 엄청 연한 하늘색 )
+*/
+
+/*========================= HEADER ==================================*/
+body {
+	font-family: 'Jua', sans-serif;
+	background:#F8FFFF;
+}
+a {
+	text-decoration: none;
+}
+#logo {
+    white-space: nowrap;
+    display:inline-block;
+    margin-top:1.5em;
+    font-size:56px;
+    color:#8BC0E8;
+    text-decoration: none;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 5px 5px 10px #DDD;
+    margin-left:3em;
+}
+#header_line {
+	margin: 110px -10px;
+    border: 3px solid #8BC0E8;
+}
+#info_box {
+	float: right;
+    margin-right: 400px;
+    margin-top: 163px;
+}
+#info_box #info {
+	margin:10px 0;
+	font-size: 20px;
+}
+#info_box input[type='button'] {
+	color:white;
+	background:#8BC0E8;
+	font-family: 'Jua', sans-serif;
+	border:none;
+	padding:5px 10px;
+	font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    margin-right: 10px;
+}
+
+/*==========================  SECTION   ===================================*/
+
+section {
+	margin:0 auto;
+	width:1200px;
+	height:1050px;
+}
+select {
+	font-family: 'Jua', sans-serif;
+	height: 50px;
+    width: 300px;
+    font-size: 20px;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+}
+#s_header {
+	margin-bottom: 50px;
+}
+
+section article {
+	box-sizing: border-box;
+	border:1px solid #BDBDBD;
+	float:left;
+	width:200px;
+	height:280px;
+	overflow: hidden;
+	position: relative;
+}
+section article p {
+	margin:0;
+	margin-left:5px;
+}
+section article input[type="button"] {
+	font-family: 'Jua', sans-serif;
+    position: absolute;
+    left: 130px;
+    top: 5px;
+    color: white;
+    border: none;
+    background: #8BC0E8;
+    padding: 3px 7px;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+#look {
+	font-family: 'Jua', sans-serif;
+	height:50px;
+	width:100px;
+	font-size: 20px;
+	border:none;
+	border-radius: 15px;
+	background:#8BC0E8;
+	outline: none;
+	color:white;
+}
+section article input[type="submit"] {
+	font-family: 'Jua', sans-serif;
+    position: absolute;
+    left: 130px;
+    top: 5px;
+    color: white;
+    border: none;
+    background: #8BC0E8;
+    padding: 3px 7px;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+section article input[type="submit"]:hover {
+	background:#6799FF;
+}
+section article input[type="button"]:hover {
+	background:#6799FF;
+}
+input {
+	cursor: pointer;
+}
+section article img {
+	width:200px;
+	height:200px;
+	border:none;
+	border-bottom: 1px solid #BDBDBD;
+}
+#paging {
+	z-index:999;
+	width: 1200px;
+	text-align: center;
+	clear: both;
+	margin-top:50px;
+	color:black;
+	padding-top: 40px;
+}
+#paging * {
+	background:#6799FF;
+	color:white;
+	padding:7px 5px;
+	border-radius: 5px;
+}
+#paging a {
+	background: #8BC0E8;
+}
+.market {
+	color:#8BC0E8;
+	font-weight: bold;
+}

@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Luckiest+Guy&display=swap');
+/*
+font-family: 'Jua', sans-serif; - 글자 폰트
+font-family: 'Luckiest Guy', cursive; - 로고폰트
+#8BC0E8; - 연한 하늘색
+#6799FF; - 진한 하늘색
+#F8FFFF; - 배경 색 ( 엄청 연한 하늘색 )
+*/
+body {
+	background:#8BC0E8;
+}
+#logo {
+    white-space: nowrap;
+    display:block;
+    margin-top:1em;
+    text-align: center;
+    font-size:64px;
+    color:#F8FFFF;
+    text-decoration: none;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 5px 5px 10px #DDD;
+}
+#section {
+	width:1400px;
+	height:700px;
+	background:white;
+	border-radius: 20px;
+	margin:0 auto;
+	margin-top: 30px;
+}
+
+#doing_lb,#done_lb {
+	margin-left:20px;
+	margin-top:20px;
+	display: inline-block;
+	font-family: 'Jua', sans-serif;
+}
+#doing_lb {
+	color:white;
+	background:#8BC0E8;
+	padding:5px 10px;
+	border-radius: 10px;
+}
+#done_lb {
+	border: 1px solid #BDBDBD;
+    padding: 3px 22px;
+    border-radius: 10px;
+}
+input[type=radio] {
+	display: none;
+}
+#done_lb {
+	display: none;
+}
+#doing:checked ~ #doing_lb {
+	display:none;
+}
+#doing:checked ~ #done_lb {
+	display:inline-block;
+}
+#done_div {
+	display:none;
+}
+#doing:checked ~ #done_div {
+	display: block;
+}
+#doing:checked ~ #doing_div {
+	display: none;
+}
+
+/*===================================진행중인 이벤트 div =====================================*/
+
+#doing_div {
+	width:1200px;
+	height:570px;
+	margin:0 auto;
+	margin-top:40px;
+	padding-left: 10px;
+	font-family: 'Jua', sans-serif;
+	color:white;
+}
+.goView {
+	color:white;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 30px;
+	font-size:25px;
+	border:3px solid white;
+	margin-left:70px;
+	padding:3px 5px;
+	border-radius: 10px;
+}
+.outer {
+	position:relative;
+	border-radius:15px;
+	overflow:hidden;
+	width:250px;
+	height:250px;
+	box-sizing: border-box;
+	float: left;
+	margin: 10px 20px;
+}
+.outer img {
+	width:250px;
+	height:250px;
+}
+.bgcolor {
+	width:250px;
+	height:250px;
+	position:absolute;
+	z-index: 999;
+	top:0;
+}
+.outer:hover .bgcolor{
+	background:rgba(0,0,0,0.5);
+	transition:1s;
+}
+.contents {
+	width:250px;
+	height: 250px;
+	display: none;
+	padding:10px;
+	padding-left: 30px;
+}
+.outer:hover .contents {
+	display: block;
+}
+#paging {
+	z-index:999;
+	width: 1160px;
+	text-align: center;
+	clear: both;
+	color:black;
+}
+#event_write {
+	float:right;
+	font-size:20px;
+	padding:5px 15px;
+	margin-right: 155px;
+    margin-top: 45px;
+}
+.title {
+	font-size:20px;
+}
+.eventtime {
+	margin:0;
+	font-size:24px;
+	margin-top:40px;
+}
+
+.page, #none_page {
+    color: white;
+    text-decoration: none;
+    background: #8BC0E8;
+    padding: 7px;
+    border-radius: 7px;
+}
+#none_page {
+	background:#6799FF; 
+}
+
+
+/*====================================끝난 이벤트 div =====================================*/
+
+#done_div {
+	margin-top:40px;
+}
+#done_table {
+	margin:0 auto;
+	font-family: 'Jua', sans-serif;
+	text-align: center;
+	width:1000px;
+	border-spacing: 0;
+}
+#done_table a {
+	color:black;
+	text-decoration: none;
+}
+tr,th,td {
+	border:1px solid #CFCFCF;
+}
+#done_table th {
+	font-size:20px;
+	padding:5px 0;
+	background:#BDBDBD;
+	color:white;
+}
+#done_table td {
+	height:30px;
+}
+#done_table th:first-child {
+	width:70px;
+}
+#done_table th:last-child {
+	width:220px;
+}

@@ -1,0 +1,987 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Luckiest+Guy&display=swap');
+/*
+ font-family: 'Jua', sans-serif; - 글자 폰트
+font-family: 'Luckiest Guy', cursive; - 로고폰트
+#8BC0E8; - 연한 하늘색
+#6799FF; - 진한 하늘색
+#F8FFFF; - 배경 색 ( 엄청 연한 하늘색 )
+*/
+
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+a:visited {
+    color:black;
+}
+input {
+    outline: none;
+}
+input[type="checkbox"] {
+    display:none;
+}
+input[type="radio"] {
+    display:none;
+}
+select {
+    outline:none;
+}
+body {
+    background-color:#F8FFFF;
+}
+
+/*================ ( header ) ================*/
+
+header {
+    width:1200px;
+    margin-top:5em;
+    height:550px;
+    left:360px;
+    position:absolute;
+}
+#logo {
+    width:240px;
+    overflow: hidden; 
+    height:100px;
+}
+#logotext {
+    white-space: nowrap;
+    color:#8BC0E8;
+    font-size:40px;
+    position:absolute;
+    top:17px;
+    padding:0.5em;
+    margin:0;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 5px 5px 10px #DDD;
+}
+
+/*=================우측 상단메뉴바==================*/
+
+.fas,.far {
+    font-size:1.5em;
+}
+#rside span {
+    font-size:24px;
+    font-weight: bold;
+    font-family: 'Jua', sans-serif;  
+}
+#money span, #worldtime span {
+    padding-left:0.2em;
+}
+#rside div {
+    float:left;
+}
+#rside > ul li{
+    display:block;
+    padding-left:2em;
+}
+#rside {
+    font-family: 'Jua', sans-serif;
+    position:absolute;
+    right:50px;
+    top:30px;
+}
+#rside ul li:hover i {
+    color:#8BC0E8;
+}
+#rfirst:hover #weathers {
+    height:164px;
+}
+#weathers {
+    background:white;
+    position:absolute;
+    top:50px;
+    right:190px;
+    z-index: 999;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px gray;
+    transition: 1s;
+    height:0;
+}
+#weathers a {
+    display:block;
+    padding:1em;
+    border-top:1px solid lightgray;
+}
+#weathers a:nth-of-type(1) {
+    border-top:none;
+}
+
+#weathers a:hover {
+    background:lightgray;
+}
+
+/*================유저가 올린 사진=================*/
+
+#userpic {
+    font-family: 'Jua', sans-serif;
+    width:820px;
+    height:450px;
+    overflow:hidden;
+    float:left;
+}
+#userpic img{
+    border: 1px solid lightgray;
+    width: 800px;
+    height: 400px;
+    z-index: 1;
+    position: absolute;
+    border-radius: 15px;
+    left: 0;
+    top: 100px;
+}
+#userpic .fas {
+    color:dimgray;
+}
+#userpic span {
+    font-size:3.5em;
+    z-index: 2;
+    color:gray;
+}
+#userpic p {
+    position:absolute;
+    z-index: 3;
+    background:white;
+    border-radius: 15px;
+    padding:0 15px;
+    left:320px;
+}
+#ltriangle {
+    position:absolute;
+    left:20px;
+    top:270px;
+}
+#rtriangle {
+    position:absolute;
+    top:270px;
+    right:410px;
+}
+#user_2 , #user_3 {
+    display:none;
+}
+#clickright:checked ~ #user_1 {
+    display:none;
+}
+#clickright:checked ~ #user_3 {
+    display:block;
+}
+#clickleft:checked ~ #user_1 {
+    display:none;
+}
+#clickleft:checked ~ #user_2 {
+    display:block;
+}
+
+/*=================로그인 창===================*/
+
+
+#login {
+    width:320px;
+    height:150px;
+    float:right;
+    box-sizing: border-box;
+    padding:1em;
+    font-family: 'Jua', sans-serif;
+    margin-right:3.6em;
+    border:3px solid #8BC0E8;
+    border-radius: 15px;
+}
+
+#login span {
+    display:block;
+    margin-bottom:0.5em;
+}
+#login a {
+    background:#8BC0E8;
+    color:white;
+    padding:0.5em 0.7em;
+    border-radius: 10px;
+}
+#login img {
+    width:100px;
+    height:110px;
+    border-radius:15px;
+    float:left;
+    margin-right:1em;
+    border:1px solid #BDBDBD;
+}
+#logout {
+    width:320px;
+    height:150px;
+    float:left;
+    box-sizing: border-box;
+    padding:1em;
+    font-family: 'Jua', sans-serif;
+    margin-right:3em;
+    border:3px solid #8BC0E8;
+    border-radius: 15px;
+    position:relative;
+}
+#login_label:active {
+	background-color: #6799FF;
+}
+#my_page:active {
+	background-color: #6799FF;
+}
+#logout_box:active {
+	background-color: #6799FF;
+}
+#id , #pw {
+    width:120px;
+    height:20px;
+    border:1px solid lightgray;
+    margin-left: 10px;
+    margin-bottom:20px;
+    border-radius: 10px;
+    padding-left:1em;
+}
+#logout label:nth-of-type(1) {
+    margin-left:16px;
+}
+#info {
+    text-align: center;
+    font-size:0.8em;
+}
+#info a:hover {
+	color:#8BC0E8;;
+}
+input[type="submit"] {
+    display: none;
+}
+#loginbox ~ label {
+    background:#8BC0E8;
+    position:absolute;
+    text-align: center;
+    color:white;
+    padding:1.1em;
+    border-radius: 10px;
+    right:9px;
+    top:33px;
+}
+#loginbox a {
+    display:inline-block;
+    color:white;
+    padding:1em;
+}
+#loginbox:active {
+    background:#8CAFFA;
+}
+
+/*==================사진공유창===================*/
+
+fieldset {
+    font-family: 'Jua', sans-serif;
+    float:right;
+    width:320px;
+    height:205px;
+    margin-top:3em;
+    margin-right:3.6em;
+    border:3px solid #8BC0E8;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding:1.5em;
+    padding-top: 0.6em;
+}
+fieldset:hover legend #note {
+    color:#8BC0E8;
+}
+legend {
+    padding:0 1em;
+    font-size:1.2em;
+     text-align: center;
+}
+#note {
+    font-size:1.2em;
+    margin-left:0.3em;
+}
+fieldset ul {
+    margin:0;
+    padding:0;
+}
+fieldset ul li {
+    margin-bottom:0.7em;
+}
+fieldset a {
+    font-size:20px;
+    cursor: pointer;
+}
+fieldset a:hover i {
+	color:#778899;
+}
+#traveler_note i{
+	font-size:20px;
+}
+
+
+/*================항공권 예매====================*/
+
+#reserve {
+    width:1150px;
+    box-sizing: border-box;
+    height:380px;
+    background:#8BC0E8;  
+    border-radius: 20px;
+    margin-right:24.5em;
+    padding:2.5em;
+    color:white;
+    font-family: 'Jua', sans-serif;
+    position:absolute;
+    top:620px;
+    left:360px;
+}
+
+#airport input[type="text"] {
+    width:200px;
+    height:50px;
+    font-size:1.0em;
+    padding:0 1em;
+    border-radius: 10px;
+    border:none;
+    font-weight: bold;
+}
+#arrive_airport {
+	position: absolute;
+	top: 65px;
+    left: 0;
+}
+#start_airport {
+	position:absolute;
+	left: 40px;
+    top: 105px;
+}
+#startport select {
+	font-family: 'Jua', sans-serif;
+	font-size: 24px;
+    padding: 10px;
+    padding-right: 50px;
+    border-radius: 15px;
+}
+#endport input::-webkit-search-cancel-button {
+    display:none;
+}
+
+.airplane {
+    position:absolute;
+    color:black;
+    left:295px;
+    font-size:3.2em;
+    top:38px;
+}
+#search_start:checked ~ .search_airport {
+    height:200px;
+}
+#search_end:checked ~ #choice_country {
+    display:block;
+}
+#choice_country {
+    display:none;
+    width:200px;
+    margin-top:0.5em;
+}
+#choice_country > label {
+    color:black;
+    background:white;
+    float:left;
+    box-sizing: border-box;
+    width:66.5px;
+    font-size:14px;
+    padding:0.2em 0;
+    padding-left:4px;
+}
+#choice_country > label:hover {
+    background:lightgray;
+}
+#choice_country > label:nth-of-type(1) {
+    border-radius: 5px 0 0 0;
+}
+#choice_country > label:nth-of-type(3) {
+    border-radius: 0 5px 0 0;
+}
+#choice_country > label:nth-of-type(4) {
+    border-radius: 0 0 0 5px;
+}
+#choice_country > label:nth-of-type(6) {
+    border-radius: 0 0 5px 0;
+}
+#choice_country i {
+    float:right;
+    margin-right:5px;
+    font-size:14px;
+}
+#choice_country .search_airport {
+    top:110px;
+}
+#go_america:checked ~ #america_airport {
+    height:200px;
+}
+#go_france:checked ~ #france_airport {
+    height:200px;
+}
+#go_swiss:checked ~ #swiss_airport {
+    height:200px;
+}
+#go_aust:checked ~ #aust_airport {
+    height:200px;
+}
+#go_china:checked ~ #china_airport {
+    height:200px;
+}
+#go_italy:checked ~ #italy_airport {
+    height:200px;
+}
+.search_airport {
+    position:absolute;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background:white;
+    color:black;
+    width:200px;
+    height:00px;
+    z-index: 999;
+    overflow: auto;
+    top:95px;
+    transition: 1s;
+    text-overflow: ellipsis;
+}
+
+.search_airport ul {
+    padding:0;
+}
+.search_airport li {
+    padding:1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.search_airport li:hover {
+    background-color:lightgray;
+}
+#endport {
+    position:absolute;
+    top:40px;
+    left:380px;
+}
+#endport .fa-search {
+    font-size:2.2em;
+    color:#8BC0E8;
+    position:absolute;
+    left: 184px;
+    top: 8px;
+}
+#startport .fa-search {
+   font-size: 2.2em;
+    color: #8BC0E8;
+    position: absolute;
+    left: 220px;
+    top: 48px;
+}
+#endport .fa-caret-down {
+    color:gray;
+}
+#trip_day {
+    margin-top:1em;
+}
+#trip_day label{
+    color:black;
+    border:1px solid black;
+    padding:0.1em 0.5em;
+    background:white;
+    float:left;
+}
+#trip_day > label:nth-of-type(1) {
+    border-right:none;
+    border-radius: 7px 0 0 7px;
+    margin-left:8em;
+}
+#trip_day label:nth-of-type(2) {
+    border-radius: 0 7px 7px 0;
+}
+#trip_start {
+    position:absolute;
+    width:300px;
+    top:150px;
+}
+#trip_start label {
+    position:absolute;
+    top:24px;
+    left:1px;
+    padding:0.2em 2.94em;
+    background:none;
+    border:none;
+    background:white;
+    border-radius: 5px 5px 0 0;
+    
+}
+#trip_start input[type="date"] {
+    position:absolute;
+    left:1px;
+    top:50px;
+    width:132px;
+    height:30px;
+    border:none;
+    border-radius: 0 0 5px 5px;
+    border-top:1px solid gray;
+}
+#trip_end {
+   position:absolute;
+    width:300px;
+    top:150px;
+    left:250px;
+}
+#trip_end label {
+    position:absolute;
+    top:24px;
+    padding:0.2em 2.94em;
+    background:none;
+    border:none;
+    background:white;
+    border-radius: 5px 5px 0 0;
+    border-bottom:none;
+}
+#trip_end input[type="date"] {
+    position:absolute;
+    left:0px;
+    top:50px;
+    width:132px;
+    height:30px;
+    border:none;
+    border-radius: 0 0 5px 5px;
+    border-top:1px solid gray;
+}
+#trip_day #round_trip:checked + label{
+    background:gray;
+    color:white;
+}
+#trip_day #one_way:checked + label{
+    background:gray;
+    color:white;
+}
+#trip_day #one_way:checked ~ #trip_end {
+    display:none;
+}
+
+#trip_day #one_way:checked ~ #trip_start {
+    margin-left:7em;
+}
+#buy_ticket + label{
+    box-sizing: border-box;
+    position: absolute;
+    right:30px;
+    top:110px;
+    background:white;
+    color:black;
+    font-size:1.5em;
+    border-radius: 20px;
+    display:block;
+    color:#8BC0E8;
+    padding:2em 1em;
+}
+#buy_ticket {
+    display:none;
+}
+#buy_ticket + label span {
+    margin:0 7px;
+}
+#aircom {
+    position:absolute;
+    left:405px;
+    bottom: 64px;
+}
+#aircom select {
+    width:145px;
+    height:40px;
+    border-radius: 10px;
+ 	font-family: 'Jua', sans-serif;
+ 	font-size: 16px;
+ 	padding-left:5px;
+}
+#seat {
+    position:absolute;
+    left:405px;
+    bottom:40px;
+}
+#seat select {
+    width:145px;
+    height:40px;
+    border-radius: 10px;
+}
+#nth_people {
+    font-size:0.8em;
+}
+#nth_people .far,#nth_people .fas {
+    margin-right:0.1em;
+}
+#nth_people > div {
+    position:absolute;
+}
+#nth_people > div label{
+    border-radius: 10px;
+}
+#nth_people > div:nth-of-type(1) label {
+    width:130px;
+}
+#nth_people > div:nth-of-type(2) label {
+    width:130px;
+}
+#nth_people > div:nth-of-type(3) label {
+    width:130px;
+}
+#adult_select {
+    top:280px;
+}
+#adult,#child,#baby {
+    height:27px;
+}
+#adult {
+   margin-left:65px;
+}
+#child_select {
+    top:320px;
+}
+#child_select i {
+    font-size:14px;
+}
+#child {
+    margin-left:65px;
+}
+#baby_select {
+    top:310px;
+}
+#baby {
+    margin-left:65px;
+}
+#ticket_check {
+    box-sizing: border-box;
+    position:absolute;
+    width:280px;
+    height:322px;
+    background:white;
+    right:220px;
+    top:25px;
+    margin:0;
+    margin-right:1em;
+    padding:1em;
+    padding-top:0.5em;
+    color:black;
+    font-size:18px;
+}
+#ticket_check ul li {
+    margin-bottom:0.2em;
+    overflow: hidden;
+  	white-space: nowrap;
+  	width: 238px;
+  	height: 30px;
+}
+#ticket_check ul li:nth-last-of-type(1) {
+	font-size:16px;
+}
+#ticket_check legend {
+    color:black;
+    background:white;
+    border:1px solid black;
+    border-radius: 10px;
+    padding-top:0.1em;
+}
+#ticket_check span {
+    display:inline-block;
+    margin-left:1em;
+    margin-top:0.5em;
+}
+#ticket_check .fas {
+    font-size:1em;
+    position:absolute;
+    bottom:30px;
+    right:40px;
+}
+#reservation {
+	display: block;
+    color: white;
+    background: #8BC0E8;
+    font-family: 'Jua', sans-serif;
+    font-size: 24px;
+    padding: 5px 10px;
+    float: right;
+    border: none;
+    border-radius: 12px;
+}
+#reserve_check {
+	display: inline-block;
+    position: absolute;
+    right: 30px;
+    border: none;
+    background: white;
+    color: #8BC0E8;
+    font-family: 'Jua', sans-serif;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    top: 15px;
+}
+
+/*=================왼쪽 고정 사이드==================*/
+
+#leftnav {
+    min-width:300px;
+    height:2100px;
+    position:absolute;
+}
+
+#mypage {
+    z-index: 30;
+    font-size:13px;
+    text-align: center;
+    position:fixed;
+    float:left;
+    top:300px;
+    left:90px;
+    font-weight: bold;
+}
+#mypage .far,#mypage .fas {
+    padding:0 1em;
+    padding-top:0.5em;
+    font-size:30px;
+}
+#mypage li{
+    border:1px solid black;
+    border-top:none;
+    background:white;
+}
+#mypage a p {
+    margin:0;
+    margin-bottom: 0.5em;
+    padding:0 0.5em
+}
+#mypage li:nth-of-type(1) {
+    border-radius: 15px 15px 0 0;
+    border-top:1px solid black;
+}
+#mypage li:nth-last-of-type(1) {
+    border-radius: 0 0 15px 15px;
+}
+#mypage li:nth-last-of-type(1):hover {
+    background:gray;
+}
+#mypage li:nth-last-of-type(1):hover a {
+    color:white;
+}
+#mypage li:hover .far{
+    color:#8BC0E8;
+}
+#mypage li:hover .fas{
+    color:#8BC0E8;
+}
+#mypage li:nth-last-of-type(1):hover #has_star{
+    display:none;
+}
+#mypage li:nth-last-of-type(1):hover #lost_star {
+    display:block;
+    color:yellow;
+}
+#lost_star {
+    display: none;
+}
+
+/*=================추천 여행지===================*/
+
+#recommend {
+    height:800px;
+    width:1150px;
+    position:relative;
+    left:360px;
+    top:1035px;
+    background:#8BC0E8;
+    border-radius: 20px;
+    font-family: 'Jua', sans-serif;
+}
+#recommend:hover #rclogo i {
+    color:red;
+}
+#recommend article {
+    width:350px;
+    height:350px;
+    border-radius: 15px 15px 0 0;
+    position:absolute;
+    overflow:hidden;
+}
+#recommend img {
+    width:350px;
+    height:250px;
+    transition: 2s;
+}
+#recommend div {
+    background:black;
+    color:white;
+    font-weight: bold;
+    width:350px;
+    height:80px;
+    border-radius: 0 0 15px 15px;
+}
+#recommend div * {
+    margin:0;
+    margin-top:10px;
+    margin-left:30px;
+}
+#recommend div p:nth-of-type(1) {
+	letter-spacing:12px;
+    font-size:1.8em;
+}
+#recommend div p:nth-of-type(2) {
+    margin-top:0;
+    margin-left:260px;
+    letter-spacing:3px;
+}
+#recommend img:hover {
+    width:400px;
+    height:300px;
+}
+#recommend #rclogo {
+    display:inline-block;
+    position:absolute;
+    top:14px;
+    left:20px;
+    font-size:20px;
+    padding:0.5em;
+    background:white;
+    border-radius: 13px;
+}
+#rclogo .fas {
+    font-size:1.3em;
+}
+#recommend_1 {
+    left:20px;
+    top:75px;
+}
+#recommend_1 div {
+    position:absolute;
+    top:250px;
+}
+#recommend_2 {
+    top:75px;
+    left:395px;
+}
+#recommend_2 div {
+    position:absolute;
+    top:250px;
+}
+#recommend_3 {
+    top:75px;
+    left:775px;
+}
+#recommend_3 div {
+    position:absolute;
+    top:250px;
+}
+#recommend_4 {
+    bottom:20px;
+    left:20px;
+}
+#recommend_4 div {
+    position:absolute;
+    top:250px;
+}
+#recommend_5 {
+    bottom:20px;
+    left:395px;
+}
+#recommend_5 div {
+    position:absolute;
+    top:250px;
+}
+#recommend_6 {
+    bottom:20px;
+    left:775px;
+}
+#recommend_6 div {
+    position:absolute;
+    top:250px;
+}
+.gogo {
+    background:#8BC0E8;
+    padding:0.2em 0.4em;
+    border-radius: 10px;
+    position:absolute;
+    right:20px;
+    bottom:45px;
+}
+.gogo:hover {
+    background:#368AFF;
+   
+}
+
+/*===================footer===================*/
+
+footer {
+    width:1150px;
+    margin-top:2em;
+    height:150px;
+    background:#8BC0E8;
+    border-radius: 20px;
+    font-family: 'Jua', sans-serif;
+    position:absolute;
+    left: 368px;
+    top: 1850px;
+    margin-bottom: 50px;
+}
+#manual .fas {
+    font-size:16px;
+}
+#manual ul {
+    padding-top:30px;
+    text-align: center;
+}
+#manual li {
+	padding: 0 10px;
+    border-right:3px solid white;
+    width: 105px;
+	display: inline-block;
+}
+#manual li:nth-of-type(3) {
+    width: 135px;
+}
+#manual li:nth-of-type(1) {
+    border-left:3px solid white;
+}
+#manual a {
+    color:white;
+    transition:1s;
+	
+}
+#manual a:hover {
+    color:gray;
+}
+#pwcompany {
+    position:absolute;
+    left:15px;
+    bottom:20px;
+    font-family: none;
+    font-size:15px;
+    font-weight: bold;
+}
+#pwcompany span{
+    font-size:12px;
+}
+#address {
+    position:absolute;
+    left:15px;
+    bottom:5px;
+    font-size:13px;
+    font-family: none;
+    font-weight: bold;
+}
+#copy {
+    position:absolute;
+    left:15px;
+    bottom:-10px;
+    font-family: none;
+    font-size:13px;
+    font-weight: bold;
+}
+#admin_text {
+	float:right;
+	margin:29px;
+}

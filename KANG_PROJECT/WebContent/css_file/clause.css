@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Luckiest+Guy&display=swap');
+/*
+ font-family: 'Jua', sans-serif; - 글자 폰트
+font-family: 'Luckiest Guy', cursive; - 로고폰트
+#8BC0E8; - 연한 하늘색
+#6799FF; - 진한 하늘색
+#F8FFFF; - 배경 색 ( 엄청 연한 하늘색 )
+*/
+
+
+body {
+	 background-color:#F8FFFF;
+	 text-align: center;
+	 font-family: 'Jua', sans-serif;
+}
+
+#logo {
+    white-space: nowrap;
+    display:block;
+    text-align: center;
+    margin-top:0.5em;
+    font-size:32px;
+    color:#8BC0E8;
+    text-decoration: none;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 5px 5px 10px #DDD;
+}
+#close {
+	text-decoration: none;
+	color:#6799FF;
+	font-family: 'Jua', sans-serif;
+	font-size:20px;
+}
+.color {
+	
+	text-decoration: none;
+	color:#6799FF;
+	font-family: 'Jua', sans-serif;
+}

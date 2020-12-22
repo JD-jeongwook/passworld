@@ -1,0 +1,358 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Luckiest+Guy&family=Nanum+Pen+Script&display=swap');
+/*
+ font-family: 'Jua', sans-serif; - 글자 폰트
+font-family: 'Luckiest Guy', cursive; - 로고폰트
+font-family: 'Nanum Pen Script', cursive; - 자유게시판 폰트
+#8BC0E8; - 연한 하늘색
+#6799FF; - 진한 하늘색
+#F8FFFF; - 배경 색 ( 엄청 연한 하늘색 )
+*/
+body {
+	margin:0 auto;
+	width:1400px;
+	background-color:#F8FFFF;
+	height:1500px;
+}
+#logo {
+    white-space: nowrap;
+    display:inline-block;
+    margin-top:1.5em;
+    font-size:56px;
+    color:#8BC0E8;
+    text-decoration: none;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 5px 5px 10px #DDD;
+}
+a {
+	text-decoration: none;
+	color:black;
+}
+section {
+	margin-top:50px;
+	border-radius: 30px;
+}
+input {
+	outline:none;
+}
+
+/*=========================================== 위에부분  =====================================================*/
+
+#head {
+	width:1050px;
+	box-sizing: border-box;
+	height:200px;
+	background:#8BC0E8;
+	border-radius: 30px 0 0 0;
+	float:left;
+} 
+#head p {
+	font-family: 'Jua', sans-serif;
+	font-size: 64px;
+	color:white;
+	line-height: 100px;
+	padding-left:80px;
+}
+
+/*=========================================== nav 부분  =====================================================*/
+
+nav {
+	float:right;
+	box-sizing: border-box;
+	border:3px solid #8BC0E8;
+	border-left:none;
+	width:350px;
+	height:1250px;
+	position:relative;
+	border-radius: 0 30px 30px 0;
+}
+
+#login {
+    width:320px;
+    height:150px;
+    float:right;
+    box-sizing: border-box;
+    padding:1em;
+    font-family: 'Jua', sans-serif;
+    margin-right:1em;
+    margin-top:3em;
+    border:3px solid #8BC0E8;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+#login span {
+    display:block;
+    margin-bottom:0.5em;
+}
+#login a {
+    background:#8BC0E8;
+    color:white;
+    padding:0.5em 0.7em;
+    border-radius: 10px;
+}
+#login img {
+    width:100px;
+    height:110px;
+    border-radius:15px;
+    float:left;
+    margin-right:1em;
+}
+#logout {
+    width:320px;
+    height:150px;
+    float:right;
+    box-sizing: border-box;
+    padding:1em;
+    font-family: 'Jua', sans-serif;
+    margin-right:1em;
+    margin-top:3em;
+    border:3px solid #8BC0E8;
+    border-radius: 15px;
+    position:relative;
+    margin-bottom: 50px;
+}
+#login_label:active {
+	background-color: #6799FF;
+}
+#my_page:active {
+	background-color: #6799FF;
+}
+#logout_box:active {
+	background-color: #6799FF;
+}
+#id , #pw {
+    width:120px;
+    height:20px;
+    border:1px solid lightgray;
+    margin-left: 10px;
+    margin-bottom:20px;
+    border-radius: 10px;
+    padding-left:1em;
+}
+#logout label:nth-of-type(1) {
+    margin-left:16px;
+}
+#info {
+    text-align: center;
+    font-size:0.8em;
+}
+#info a {
+	color:black;
+}
+#info a:hover {
+	color:#8BC0E8;
+}
+#loginbox {
+    display: none;
+}
+#loginbox ~ label {
+    background:#8BC0E8;
+    position:absolute;
+    text-align: center;
+    color:white;
+    padding:1.1em;
+    border-radius: 10px;
+    right:9px;
+    top:33px;
+}
+#loginbox a {
+    display:inline-block;
+    color:white;
+    padding:1em;
+}
+#loginbox:active {
+    background:#8CAFFA;
+}
+
+/*======================================= article 부분 ================================================*/
+
+article {
+	float:left;
+	width:1050px;
+	box-sizing: border-box;
+	border:3px solid #8BC0E8;
+	height:1050px;
+	border-radius: 0 0 0 30px;
+}
+table {
+	width:1044px;
+	border-spacing: 0;
+}
+#table_head th {
+	border-bottom:3px solid #8BC0E8;
+	height:60px;
+	font-family: 'Jua', sans-serif;
+	font-size:2em;
+	color:#8BC0E8;
+}
+th:first-child {
+	width:100px;
+}
+th:nth-child(3) {
+	width:200px;
+}
+th:nth-child(4) {
+	width:100px;
+}
+th:last-child {
+	width:100px;
+}
+td {
+	height:35px;
+	font-family: 'Jua', sans-serif;
+	font-size:1.2em;
+	text-align: center;
+}
+
+tr:nth-child(odd):not(#table_head) {
+	background:#D3E8FF;
+}
+tr:not(#table_head):hover {
+	background:#8BC0E8;
+	color:white;
+}
+#paging {
+	margin-top:1em;
+	font-family: 'Jua', sans-serif;
+	display:block;
+	text-align: center;
+}
+#select_page {
+	background:#6799FF;
+	padding:0.5em;
+	border-radius:5px;
+	color:white;
+}
+#ib {
+	display: inline-block;
+}
+#none_select_page {
+	background:#8BC0E8;
+	padding:0.5em;
+	color:white;
+	border-radius:5px;
+}
+.none_select_page {
+	border:none;
+	font-family: 'Jua', sans-serif;
+	font-size:16px;
+	display: inline-block;
+}
+#write {
+	background:#8BC0E8;
+	color:white;
+	font-family: 'Jua', sans-serif;
+	font-size: 28px;
+	border:none;
+	border-radius: 10px;
+	display:block;
+	margin:0 auto;
+	margin-top:1em;
+	padding:10px 15px;
+}
+#write:active {
+	background:#6799FF;
+	outline: none;
+}
+.fa-camera-retro {
+	color:#E53A40;
+}
+.comment_cnt {
+	color:#E53A40;
+	font-size: 16px;
+}
+#searching form {
+	text-align: center;
+}
+#searching form select {
+	outline: none;
+}
+#search_list {
+	width:120px;
+	height:40px;
+	border:1px solid #BDBDBD;
+	border-radius: 15px;
+	text-align: center;
+	font-family: 'Jua', sans-serif;
+	padding-left: 10px;
+	font-size: 16px;
+}
+#search_list option:hover {
+	background:gray;
+}
+#searching {
+	margin-top:30px;
+}
+#searching input[type="text"] {
+	width:300px;
+	margin:0 10px;
+	height:40px;
+	border:1px solid #BDBDBD;
+	border-radius: 15px;
+	font-family: 'Jua', sans-serif;
+	font-size: 16px;
+	padding-left: 20px;
+}
+#searching input[type="submit"] {
+	font-family: 'Jua', sans-serif;
+	font-size: 20px;
+	padding:10px 20px;
+	border:none;
+	border-radius: 15px;
+	background: #8BC0E8;
+	color:white;
+}
+#searching input[type="submit"]:active {
+	background:#6799FF;
+}
+#best_section,#my_section {
+	margin-left: 20px;
+	margin-top: 30px;
+}
+#best_list,#my_list {
+	height: 0;
+	width:300px;
+	overflow: hidden;
+	transition:1s;	
+	box-sizing: border-box;
+}
+input[type="checkbox"] {
+	display:none;
+}
+#check_best:checked ~ #best_list {
+	height:250px;
+}
+#check_my:checked ~ #my_list {
+	height:250px;
+}
+.check_font {
+	transition:1s;
+	font-size:23px;
+	font-family: 'Jua', sans-serif;
+}
+#check_best:checked ~ #best_checked {
+	color:#F8FFFF;
+}
+#check_my:checked ~ #my_checked {
+	color:#F8FFFF;
+}
+li {
+	font-family: 'Jua', sans-serif;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+	display: block;
+	overflow:hidden;
+	font-size:18px;
+	width:200px;
+}
+#none_log {
+	font-family: 'Jua', sans-serif;
+	font-size:20px;
+	color:gray;
+	margin:0;
+	margin-left:20px;
+}
+hr {
+	margin-top: 30px;
+}

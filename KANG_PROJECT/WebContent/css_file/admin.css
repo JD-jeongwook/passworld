@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Luckiest+Guy&display=swap');
+/*
+font-family: 'Jua', sans-serif; - 글자 폰트
+font-family: 'Luckiest Guy', cursive; - 로고폰트
+#8BC0E8; - 연한 하늘색
+#6799FF; - 진한 하늘색
+#F8FFFF; - 배경 색 ( 엄청 연한 하늘색 )
+*/
+a {
+	color:black;
+}
+td {
+	padding : 10px;
+	font-family: 'Jua', sans-serif;
+}
+table {
+	border-spacing: 0;
+	margin:0 auto;
+	text-align: center;
+	margin-bottom: 50px;
+}
+#admin_section {
+	margin-left:100px;
+	margin-top: 100px;
+}
+
+/*=============================헤더=====================================*/
+
+#header {
+	text-align: center;	
+	margin : 50px 0;
+}
+#header a {
+	text-decoration: none;
+	font-family: 'Jua', sans-serif;
+	padding:20px 30px;
+	display: inline-block;
+	color:gray;
+}
+#header ul {
+	overflow: hidden;
+	height: 65px;
+	display: inline-block;
+}
+#header li {
+	font-family: 'Jua', sans-serif;
+	list-style: none;
+	float:left;
+	border:1px solid #D2D2D2;
+	border-right: none;
+	border-bottom: 2px solid #8A8A8A;
+}
+#header li:last-child {
+	border-right:1px solid #D2D2D2;
+}
+#header li:hover {
+	border-left:1px solid #8A8A8A;
+	border-right:1px solid #8A8A8A;
+	border-top: 5px solid #8A8A8A;
+	border-bottom: none;
+}
+
+/*==================================================================*/
+#admin_table {
+	display: none;
+}
+.radio {
+	text-align: center;
+	margin-bottom: 30px;
+}
+#select_admin:checked ~ #admin_table {
+	display:inline-block;
+}
+#select_admin:checked ~ #user_table {
+	display:none;
+}
+#select_user:checked ~ #user_table {
+	display:inline-block;
+}
+a {
+	text-decoration: underline;
+}
+#qna_title:hover {
+	color:blue;
+}
+#page_manage {
+	text-align: center;
+	margin-top: 50px;
+}
+
+
+/*===============================admin board=========================================*/
+
+
+
+/*=================================admin frame========================================*/
+
+#frame_div {
+	text-align: center;
+}
+#frame_div table {
+	display: inline-block;
+	float: left;
+}
+#qna_table {
+	margin-left: 630px;
+}
+#shop_table {
+	margin-left:100px;
+}
+
+/*=================================admin qna===========================================*/
+
+.ans {
+	font-size: 16px;
+	padding:5px 10px;
+	border-radius: 10px;
+}
+.wait {
+	border:3px solid red;
+}
+.look_wait {
+	border:3px solid #FFDF24;
+}
+.clear {
+	border:3px solid #04CE5C;
+}
+
+/*=================================admin event=====================================*/
+
+
+#event_table a:hover {
+	color:blue;
+}
+
+
+/*==================================admin notice================================*/
+
+/*==================================admin shop========================================*/
+
+#shop_section {
+	text-align: center;
+}
+#shop_section input[type="radio"] {
+	margin-bottom: 30px;
+}
+#shop_section input {
+	outline: none;
+}
+#management_table {
+	display: none;
+}
+#shop_management:checked ~ #management_table {
+	display: table;
+}
+#shop_management:checked ~ #insert_form {
+	display: none;
+}
+#insert_form input[type='text'] {
+	width:300px;
+}
+#insert_form select {
+	font-family: 'Jua', sans-serif;
+	font-size: 18px;
+	float:left;
+	outline: none;
+	padding: 3px 10px;
+}

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Luckiest+Guy&display=swap');
+/*
+font-family: 'Jua', sans-serif; - 글자 폰트
+font-family: 'Luckiest Guy', cursive; - 로고폰트
+#8BC0E8; - 연한 하늘색
+#6799FF; - 진한 하늘색
+#F8FFFF; - 배경 색 ( 엄청 연한 하늘색 )
+*/
+body {
+	background:#8BC0E8;
+}
+#logo {
+    white-space: nowrap;
+    display:block;
+    margin-top:1em;
+    text-align: center;
+    font-size:64px;
+    color:#F8FFFF;
+    text-decoration: none;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 5px 5px 10px #DDD;
+}
+a {
+	color:black;
+	text-decoration: none;
+}
+section {
+	width:1400px;
+	background:white;
+	border-radius: 15px;
+	margin:0 auto;
+	font-family: 'Jua', sans-serif; 
+	padding:10px;
+}
+table {
+	text-align: center;
+	width:900px;
+	border-spacing: 0;
+}
+tr,td {
+	border:1px solid #C6C6C6;
+	height: 30px;
+}
+td:first-child {
+	width:120px;
+}
+td:nth-child(2) {
+	text-align: left;
+	padding-left: 20px;
+}
+#plus_td {
+	width:100px;
+}
+#event_now {
+	font-size:30px;
+	padding-left: 50px;
+}
+.otherPage {
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+#list_go {
+	padding: 20px;
+    font-size: 20px;
+}
+.triangle {
+	margin-right: 10px;
+}
+.event_time {
+	display: inline;
+	float:right;
+	padding-right: 20px;
+}
+#event {
+	width : 900px;
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+#event img {
+	width:900px;
+	float:left;
+}
+#event_header {
+	width: 900px;
+	height:115px;
+	padding:20px;
+	box-sizing: border-box;
+	background:#BDBDBD;
+	color:white;
+}
+#event_header * {
+	margin:0;
+}
+#event_header p:first-child {
+	font-size:28px;
+}

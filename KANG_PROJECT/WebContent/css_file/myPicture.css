@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Luckiest+Guy&display=swap');
+/*
+ font-family: 'Jua', sans-serif; - 글자 폰트
+font-family: 'Luckiest Guy', cursive; - 로고폰트
+#8BC0E8; - 연한 하늘색
+#6799FF; - 진한 하늘색
+#F8FFFF; - 배경 색 ( 엄청 연한 하늘색 )
+*/
+body {
+	background:#1b1a1a;
+}
+
+#fixed {
+	position: fixed;
+	background:#1b1a1a;
+	width:815px;
+	margin-left: -10px;
+    margin-top: -10px;
+    z-index: 999;
+}
+#blank {
+	height:90px;
+}
+#logo {
+	text-align: center;
+	color:white;
+	font-family: 'Luckiest Guy', cursive;
+	font-size:4em;
+	margin:10px 0;
+	text-shadow: 5px 5px 5px gray;
+}
+.img { 
+	box-sizing: border-box;
+	width:134px;
+	height:133px;
+	overflow: hidden;
+	background:white;
+	float:left;
+	border:solid 2px #ddd;
+	margin:11px;
+	opacity: 0.5;
+	transition:1s;
+	box-shadow: 3px 3px 4px 0px darkgrey;
+}
+.img:hover {
+	opacity:1;
+}
+img {
+	width:133px;
+	height:133px;
+}
+#none_list {
+	color:white;
+	 font-family: 'Jua', sans-serif;
+	 margin-top:200px;
+	 text-align: center;
+}
+#test {
+	width:600px;
+	height:600px;
+	background:white;
+}
+#img_null {
+	background:gray;
+	color:white;
+	border:none;
+	text-align: center;
+	line-height: 9;
+}
+#img_null i {
+	font-size: 2em;
+	
+}

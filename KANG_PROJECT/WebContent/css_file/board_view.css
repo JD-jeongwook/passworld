@@ -1,0 +1,323 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Luckiest+Guy&display=swap');
+/*
+ font-family: 'Jua', sans-serif; - 글자 폰트
+font-family: 'Luckiest Guy', cursive; - 로고폰트
+#8BC0E8; - 연한 하늘색
+#6799FF; - 진한 하늘색
+#F8FFFF; - 배경 색 ( 엄청 연한 하늘색 )
+*/
+body {
+	 background-color:#8BC0E8;
+	 font-family: 'Jua', sans-serif;
+	 margin-bottom: 100px;
+}
+#contents {
+	background:#F8FFFF;
+	width:1400px;
+	margin:0 auto;
+	border-radius: 20px;
+	padding-bottom: 50px;
+}
+#logo {
+    white-space: nowrap;
+    display:block;
+    text-align: center;
+    margin-top:2em;
+    font-size:64px;
+    color:#8BC0E8;
+    text-decoration: none;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 5px 5px 10px #DDD;
+    padding-top:20px;
+}
+
+section {
+	margin-top:50px;
+	width:1400px;
+	box-sizing: border-box;
+}
+#head {
+	margin-left:100px;	
+}
+#title {
+	margin-left:30px;
+	font-size: 3.5em;
+	margin-bottom:10px;
+}
+#writer {
+	box-sizing: border-box;
+	margin-left:20px;
+	width:350px;
+	height:150px;
+	border:3px solid #8BC0E8;
+	border-radius: 20px;
+}
+#writer img {
+	width:113px;
+	height:124px;
+	float: left;
+	border:1px solid #BDBDBD;
+	border-radius:20px;
+	margin:0 15px;
+	margin-top:9px;
+}
+#writer_id {
+	font-size:25px;
+	margin-top:60px;
+	margin-bottom:10px;
+}
+.small_text {
+	font-size:12px;
+	margin:0;
+	color:#9797B1;
+}
+#contents_box {
+	margin:0 auto;
+	display: block;
+	width:1300px;
+	padding-bottom:30px;	
+}
+#contents_text {
+	margin:0 auto;
+	display: block;
+	background:#F8FFFF;
+	resize: none;
+	box-sizing:border-box;
+	width:1100px;
+	height:600px;
+	outline:none;
+	font-family: 'Jua', sans-serif;
+	font-size:1.6em;
+	border:none;
+}
+hr {
+	margin:30px 0;
+	clear:both;
+}
+#user_picture {
+	display:block;
+	margin:0 auto;
+	max-width: 1000px;
+	margin-bottom: 20px;
+}
+#move_list {
+	text-align: center;
+	
+}
+#move_list * {
+	margin:0 10px;
+}
+.list {
+	font-size: 25px;
+	font-family: 'Jua', sans-serif;
+	background-color:#8BC0E8;
+	color:white;
+	padding: 10px 15px;
+	border:none;
+	outline: none;
+	border-radius: 10px;
+}
+.list:active {
+	background:#6799FF;
+}
+.two {
+	padding: 10px 25px;
+}
+#likey {
+	background:#8BC0E8;
+	display:inline-block;
+	margin-left: 100px;
+	border-radius: 20px;
+}
+#likey label {
+	display:inline-block;
+	padding:10px 20px;
+	font-size: 20px;
+	color:white;
+}
+input[type="checkbox"] {
+	display: none;
+}
+#like_cnt {
+	color:black;
+	margin-left: 15px;
+} 
+#recommend:checked + label .fas {
+	color:#E53A40;
+}
+
+/*=================================== 댓글 ============================================*/
+#comment form {
+	width:1000px;
+	height:200px;
+	margin:0 auto;
+}
+#comment img {
+	border-radius: 100px;
+	border:5px solid #8BC0E8;
+	float:left;
+	margin-right: 30px;
+}
+#user_profile {
+	width:130px;
+	height:130px;
+	margin-top: 13px;
+}
+#comment_box {
+	border:1px solid #BDBDBD;
+	box-sizing:border-box;
+	height:165px;
+	width:705px;
+	float:left;
+	background:white;
+	border-radius: 20px;
+	overflow: hidden;
+}
+#comment p {
+	margin:0;
+	padding-left: 30px;
+	font-size: 25px;
+}
+#comment_box textarea {
+	font-family: 'Jua', sans-serif;
+	box-sizing:border-box;
+	width:703px;
+	padding:5px;
+	resize: none;
+	height: 125px;
+	border:none;
+	font-size:18px;
+	outline: none;
+}
+#select_box {
+	float:left;
+	margin-left:688px;
+	display: block;
+}
+#select_box input {
+	font-family: 'Jua', sans-serif;
+	color:white;
+	background:#8BC0E8;
+	padding: 10px 15px;
+	font-size: 25px;
+	border-radius: 15px;
+	border:none;
+	outline:none;
+	margin-top: 17px;
+}
+#select_box input:active {
+	background:#6799FF;
+}
+#line {
+	margin:10px 0px;
+}
+.commentOK {
+	border:1px solid #BDBDBD;
+	box-sizing:border-box;
+	height:122px;
+	width:1070px;
+	margin:0 auto;
+	margin-bottom:10px;
+	background:white;
+	position:relative;
+	border-radius: 20px;
+}
+.comment_img {
+	margin-top:15px;
+	margin-left:37px;
+	width:80px;
+	height:80px;
+
+}
+.comment_contents {
+	resize: none;
+	height:80px;
+	width:750px;
+	outline: none;
+	font-size:16px;
+	border:none;
+	font-family: 'Jua', sans-serif;
+}
+#c_count {
+	font-family: 'Jua', sans-serif;
+	color:#8BC0E8;
+	font-size: 3.5em;
+	display: block;
+	margin-bottom: 30px;
+	margin-left:160px;
+}
+.comment_user {
+	font-size:1.2em;
+}
+.admin_writer {
+	font-size:14px;
+	color:white;
+	background:#19CE60;
+	padding: 3px 5px;
+	border-radius: 10px;
+}
+.same_writer {
+	font-size:14px;
+	color:white;
+	background:#E53A40;
+	padding: 3px 5px;
+	border-radius: 10px;
+}
+.writeOK {
+	border:1px solid #EAEAEA;
+	background:white;
+}
+.select_button{
+	position:absolute;
+	color:white;
+	background:#8BC0E8;
+	padding : 5px 10px;
+	font-family: 'Jua', sans-serif;
+	border:none;
+	border-radius: 15px;
+	font-size: 25px;
+	top:40px;
+	outline:none;
+}
+.select_button:active {
+	background:#6799FF;
+}
+.modify_button {
+	right:85px;
+}
+.delete_button {
+	right:15px;
+}
+#like_button {
+	display:none;
+}
+#heart {
+	float:left;
+}
+#heart + div {
+	float:left;
+}
+.fa-heart {
+	font-size: 24px;
+	color:white;
+}
+#recommend_form ul li {
+	float:left;
+	list-style: none;
+	margin-bottom: 40px;
+	padding: 10px 20px;
+	background:#8BC0E8;
+}
+#recommend_form ul li:first-child {
+	border-radius: 15px 0 0 15px;
+	margin-left: 30px;
+	padding: 7px 15px;
+}
+#recommend_form ul li:first-child:hover .fa-heart {
+	color:red
+}
+#recommend_form ul li:last-child {
+	border-radius: 0 15px 15px 0;
+	color:white;
+}
