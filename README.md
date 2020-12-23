@@ -29,6 +29,9 @@
   
   ![move_sumbnail](https://user-images.githubusercontent.com/75401960/102967365-1aca9780-4535-11eb-989e-a88e59a160ee.gif)
 
+  - 게시판
+  
+  ![board](https://user-images.githubusercontent.com/75401960/102973788-bca3b180-4540-11eb-82d2-73e2967234eb.gif)
 > The overriding design goal for Markdown's
 > formatting syntax is to make it as readable
 > as possible. The idea is that a
