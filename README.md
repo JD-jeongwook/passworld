@@ -21,6 +21,8 @@
 
 **보안을 위해 contextFile은 비공개 처리 했습니다.**
 
+### 프로젝트 기본이미지
+
 > The overriding design goal for Markdown's
 > formatting syntax is to make it as readable
 > as possible. The idea is that a
