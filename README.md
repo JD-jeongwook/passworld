@@ -23,11 +23,12 @@
 
 ----------------------------------
 
-### 프로젝트 이미지
+### 프로젝트 이미지 ( 유저 )
 
   * 메인 페이지
     * PASS WORLD 메인 페이지입니다.
-    
+    * 이미지 슬라이드의 이미지들은 최근 한달 좋아요 수가 가장 높은 게시물 사진입니다.
+
   ![move_sumbnail](https://user-images.githubusercontent.com/75401960/102967365-1aca9780-4535-11eb-989e-a88e59a160ee.gif)
 
   * 게시판
@@ -44,159 +45,77 @@
     * 비행기 티켓을 간편하게 예매할 수 있습니다.
     
     ![Reservation](https://user-images.githubusercontent.com/75401960/102978713-47d47580-4548-11eb-86f7-cefd317439d1.gif)
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
 
-This text you see here is *actually* written in Markdown! To get a feel for Markdown's syntax, type some text into the left window and watch the results in the right.
+  * 프로필 변경
+    * 유저가 원하는 프로필사진을 설정할 수 있습니다.
+     
+    ![profile](https://user-images.githubusercontent.com/75401960/102992790-406c9680-455f-11eb-907b-896430b7a9da.gif)
 
-### Tech
+  * 포인트 샵
+    * 티켓예매, 게시글등록, 댓글 등록 등으로 쌓은 포인트를 상품권과 교환할 수 있습니다.
+     
+    ![shop](https://user-images.githubusercontent.com/75401960/102993127-f6d07b80-455f-11eb-8775-92bd77725244.gif)
 
-Dillinger uses a number of open source projects to work properly:
+  * 이벤트 페이지
+    * 각종 이벤트 내용을 볼 수 있는 페이지입니다.
+    * 이벤트 기간이 끝나면 자동으로 종료된 이벤트로 넘어갑니다.
+     
+    ![event](https://user-images.githubusercontent.com/75401960/102993388-71010000-4560-11eb-8f7c-1f25786d0d86.gif)
 
-* [AngularJS] - HTML enhanced for web apps!
-* [Ace Editor] - awesome web-based text editor
-* [markdown-it] - Markdown parser done right. Fast and easy to extend.
-* [Twitter Bootstrap] - great UI boilerplate for modern web apps
-* [node.js] - evented I/O for the backend
-* [Express] - fast node.js network app framework [@tjholowaychuk]
-* [Gulp] - the streaming build system
-* [Breakdance](https://breakdance.github.io/breakdance/) - HTML to Markdown converter
-* [jQuery] - duh
+  * 1:1문의 페이지
+    * 유저가 질문하고 관리자가 답변하는 페이지입니다.
+    * 답변 여부에 따라 답변대기중,확인대기중,답변완료로 나뉩니다.
+     
+    ![qna](https://user-images.githubusercontent.com/75401960/102993896-5da26480-4561-11eb-98f8-dcd8e3859757.gif)
 
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
+-------------------------------
 
-### Installation
+### 프로젝트 이미지 ( 관리자 )
 
-Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
+ * 유저관리
+   * 유저정보 확인 및 추방, 포인트 지급을 할 수 있습니다.
+    
+   ![admin_user](https://user-images.githubusercontent.com/75401960/102994381-50d24080-4562-11eb-9d85-dd92b709c7da.gif)
 
-Install the dependencies and devDependencies and start the server.
+ * 게시판 관리
+   * 게시판에 있는 게시글의 상태 확인 및 삭제가 가능합니다.
+   
+   ![admin_board](https://user-images.githubusercontent.com/75401960/102994809-29c83e80-4563-11eb-9c9e-6ced4db3e9c3.gif)
 
-```sh
-$ cd dillinger
-$ npm install -d
-$ node app
-```
+ * 프레임 관리
+   * 1:1문의 게시판, 포인트 샵에 있는 선택메뉴를 관리합니다.
+    
+   ![admin_frame](https://user-images.githubusercontent.com/75401960/102995790-203fd600-4565-11eb-9e77-8b8ff1bf0866.gif)
 
-For production environments...
+ * 이벤트 관리
+   * 이벤트 등록 및 삭제가 가능합니다.
+   * 이벤트 기간이 종료되면 자동으로 종료된 이벤트로 이동합니다.
+    
+   ![admin_event](https://user-images.githubusercontent.com/75401960/102996616-c0e2c580-4566-11eb-9028-67217338920a.gif)
 
-```sh
-$ npm install --production
-$ NODE_ENV=production node app
-```
+ * 공지사항 관리
+   * 공지사항 등록 및 삭제가 가능합니다.
+    
+   ![admin_notice](https://user-images.githubusercontent.com/75401960/102997069-8ded0180-4567-11eb-96df-b53e87f8a857.gif)
 
-### Plugins
+ * 1:1문의 관리
+   * 유저의 질문에 답변 및 삭제가 가능합니다.
+    
+   ![admin_qna](https://user-images.githubusercontent.com/75401960/102997311-21263700-4568-11eb-9f1b-67640e8c46bb.gif)
 
-Dillinger is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
+ * 포인트 샵 관리
+   * 포인트샵에 올라갈 물품들을 등록 및 삭제가 가능합니다.
+   
+  ![admin_shop](https://user-images.githubusercontent.com/75401960/102997827-4b2c2900-4569-11eb-9eef-33282fb75f5c.gif)
 
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+ * 메인페이지 이미지 관리
+   * 추천여행지 이미지를 변경할 수 있습니다.
+   
+![admin_main](https://user-images.githubusercontent.com/75401960/102998082-cab9f800-4569-11eb-9ed8-3d9f3031bd5a.gif)
 
-
-### Development
-
-Want to contribute? Great!
-
-Dillinger uses Gulp + Webpack for fast developing.
-Make a change in your file and instantaneously see your updates!
-
-Open your favorite Terminal and run these commands.
-
-First Tab:
-```sh
-$ node app
-```
-
-Second Tab:
-```sh
-$ gulp watch
-```
-
-(optional) Third:
-```sh
-$ karma test
-```
-#### Building for source
-For production release:
-```sh
-$ gulp build --prod
-```
-Generating pre-built zip archives for distribution:
-```sh
-$ gulp build dist --prod
-```
-### Docker
-Dillinger is very easy to install and deploy in a Docker container.
-
-By default, the Docker will expose port 8080, so change this within the Dockerfile if necessary. When ready, simply use the Dockerfile to build the image.
-
-```sh
-cd dillinger
-docker build -t joemccann/dillinger:${package.json.version} .
-```
-This will create the dillinger image and pull in the necessary dependencies. Be sure to swap out `${package.json.version}` with the actual version of Dillinger.
-
-Once done, run the Docker image and map the port to whatever you wish on your host. In this example, we simply map port 8000 of the host to port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
-
-```sh
-docker run -d -p 8000:8080 --restart="always" <youruser>/dillinger:${package.json.version}
-```
-
-Verify the deployment by navigating to your server address in your preferred browser.
-
-```sh
-127.0.0.1:8000
-```
-
-#### Kubernetes + Google Cloud
-
-See [KUBERNETES.md](https://github.com/joemccann/dillinger/blob/master/KUBERNETES.md)
-
-
-### Todos
-
- - Write MORE Tests
- - Add Night Mode
-
-License
-----
-
-MIT
-
-
-**Free Software, Hell Yeah!**
-
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
-
-
-   [dill]: <https://github.com/joemccann/dillinger>
-   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
-   [john gruber]: <http://daringfireball.net>
-   [df1]: <http://daringfireball.net/projects/markdown/>
-   [markdown-it]: <https://github.com/markdown-it/markdown-it>
-   [Ace Editor]: <http://ace.ajax.org>
-   [node.js]: <http://nodejs.org>
-   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
-   [jQuery]: <http://jquery.com>
-   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
-   [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
-   [Gulp]: <http://gulpjs.com>
-
-   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
-   [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
-   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
-   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
-   [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
-   [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
+-------------------------
+ ### 프로젝트를 완성시키고 느낀점
+> 프로젝트를 진행하면 진행할수록 많이 부족한 것을 느꼈습니다.
+> 특히 api와 ajax를 사용하는 것이 학원에서 따로 배우지않아 가장 어려웠습니다.
+> 앞으로 더더욱 공부를 열심히 해야겠다고 생각하게 됐습니다.
+> 그리고 이 사이트 하나를 내가 만들었다는 생각에 많이 뿌듯했습니다.
