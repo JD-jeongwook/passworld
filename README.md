@@ -1,6 +1,6 @@
 ## PASS WORLD
 
-#프로젝트 설명
+### 프로젝트 설명
   - 출발지와 도착지를 통한 간편한 비행기티켓 예매를 가능하게 했습니다.
   - 게시판을 통해 여행후기를 공유할 수 있게 했습니다.
   - 포인트를 통해 아이템 구매를 할 수 있게 했습니다.
@@ -13,10 +13,8 @@
   - JDK ver.14.0.1
   - Apache Tomcat ver.9.0   
   - 구동전 필요한 데이터 및 설치파일
-    -  [SQL 쿼리](https://github.com/DEV-yeongji/taketo/tree/master/SQL%20%EC%BF%BC%EB%A6%AC%EB%AC%B8)
-    -  [지역 DATA](https://github.com/DEV-yeongji/taketo/blob/master/project_yeongji_final/WebContent/%EC%A7%80%EC%97%AD%ED%85%8C%EC%9D%B4%EB%B8%94%20%EB%8D%B0%EC%9D%B4%ED%84%B0.txt) , [사이트관리 DATA](https://github.com/DEV-yeongji/taketo/blob/master/project_yeongji_final/WebContent/%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%86%8C%EA%B0%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0.txt) , [관리자 DATA](https://github.com/DEV-yeongji/taketo/blob/master/project_yeongji_final/WebContent/%EA%B4%80%EB%A6%AC%EC%9E%90%20%EB%8D%B0%EC%9D%B4%ED%84%B0.txt)
-    -  [카카오 지도 API key 발급](https://accounts.kakao.com/login?continue=https%3A%2F%2Fdevelopers.kakao.com%2Flogin%3Fcontinue%3D%252Fconsole%252Fapp)
-    -  [contextFile](https://github.com/DEV-yeongji/taketo/commit/d9f07e9e99472c88f8ca03e797a49e97acab4016)
+    -  [SQL 쿼리](https://github.com/JD-jeongwook/passworld/tree/main/KANG_PROJECT/export)
+    -  [contextFile](https://github.com/JD-jeongwook/passworld/blob/main/KANG_PROJECT/context.xml)
     -  [Cos.jar](http://www.servlets.com/cos/) ,  [Jstl.jar](https://tomcat.apache.org/download-taglibs.cgi) , [Connector J](https://dev.mysql.com/downloads/connector/j/8.0.html)
 
 **쿼리문을 DB에 넣어주시고 필수Data 파일을  insert해주세요 ! 
