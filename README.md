@@ -21,7 +21,13 @@
 
 **보안을 위해 contextFile은 비공개 처리 했습니다.**
 
-### 프로젝트 기본이미지
+----------------------------------
+
+### 프로젝트 이미지
+
+  - 메인 페이지
+  
+  ![move_sumbnail](https://user-images.githubusercontent.com/75401960/102967365-1aca9780-4535-11eb-989e-a88e59a160ee.gif)
 
 > The overriding design goal for Markdown's
 > formatting syntax is to make it as readable
