@@ -25,13 +25,20 @@
 
 ### 프로젝트 이미지
 
-  - 메인 페이지
-  
+  * 메인 페이지
+    * PASS WORLD 메인 페이지입니다.
+    
   ![move_sumbnail](https://user-images.githubusercontent.com/75401960/102967365-1aca9780-4535-11eb-989e-a88e59a160ee.gif)
 
-  - 게시판
-  
+  * 게시판
+    * 유저들이 소통할 수 있는 공간입니다.
+   
   ![board](https://user-images.githubusercontent.com/75401960/102973788-bca3b180-4540-11eb-82d2-73e2967234eb.gif)
+  
+  * 나의 갤러리
+    * 내가 게시판에 올린 사진을 한눈에 볼 수 있습니다.
+  
+  ![gallary](https://user-images.githubusercontent.com/75401960/102974475-f3c69280-4541-11eb-8dc3-b6e91b45e49e.gif)
 > The overriding design goal for Markdown's
 > formatting syntax is to make it as readable
 > as possible. The idea is that a
