@@ -16,6 +16,29 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `user_qna`
+--
+
+DROP TABLE IF EXISTS `user_qna`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `user_qna` (
+  `id` varchar(20) DEFAULT NULL,
+  `wTime` datetime DEFAULT CURRENT_TIMESTAMP,
+  `title` varchar(100) DEFAULT NULL,
+  `contents` text,
+  `frame` varchar(60) DEFAULT NULL,
+  `complete` varchar(10) DEFAULT 'no',
+  `admin` int DEFAULT '0',
+  `no` int NOT NULL AUTO_INCREMENT,
+  `hit` int DEFAULT '0',
+  PRIMARY KEY (`no`),
+  KEY `user_qna_id` (`id`),
+  CONSTRAINT `user_qna_id` FOREIGN KEY (`id`) REFERENCES `user_info` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Dumping data for table `user_qna`
 --
 
@@ -34,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-12-22 21:34:06
+-- Dump completed on 2020-12-23 16:34:29

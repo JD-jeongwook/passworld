@@ -16,6 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `mvcboard`
+--
+
+DROP TABLE IF EXISTS `mvcboard`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `mvcboard` (
+  `no` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) DEFAULT NULL,
+  `title` varchar(100) DEFAULT NULL,
+  `contents` text,
+  `wtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `hit` int DEFAULT '0',
+  `groupNum` int DEFAULT NULL,
+  `stepNum` int DEFAULT '0',
+  `indentNum` int DEFAULT '0',
+  PRIMARY KEY (`no`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Dumping data for table `mvcboard`
 --
 
@@ -34,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-12-22 21:34:05
+-- Dump completed on 2020-12-23 16:34:28

@@ -16,6 +16,35 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `event_table`
+--
+
+DROP TABLE IF EXISTS `event_table`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `event_table` (
+  `no` int NOT NULL AUTO_INCREMENT,
+  `title` varchar(30) DEFAULT NULL,
+  `comment` varchar(30) DEFAULT NULL,
+  `thumbnail` varchar(50) DEFAULT NULL,
+  `img1` varchar(50) DEFAULT NULL,
+  `img2` varchar(50) DEFAULT NULL,
+  `img3` varchar(50) DEFAULT NULL,
+  `img4` varchar(50) DEFAULT NULL,
+  `img5` varchar(50) DEFAULT NULL,
+  `img6` varchar(50) DEFAULT NULL,
+  `img7` varchar(50) DEFAULT NULL,
+  `img8` varchar(50) DEFAULT NULL,
+  `img9` varchar(50) DEFAULT NULL,
+  `hit` int DEFAULT '0',
+  `start` datetime DEFAULT NULL,
+  `end` datetime DEFAULT NULL,
+  `state` varchar(10) DEFAULT 'doing',
+  PRIMARY KEY (`no`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Dumping data for table `event_table`
 --
 
@@ -34,4 +63,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-12-22 21:34:06
+-- Dump completed on 2020-12-23 16:34:29

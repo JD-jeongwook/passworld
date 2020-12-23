@@ -16,6 +16,30 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `user_board`
+--
+
+DROP TABLE IF EXISTS `user_board`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `user_board` (
+  `no` int NOT NULL AUTO_INCREMENT,
+  `title` varchar(60) DEFAULT NULL,
+  `id` varchar(30) DEFAULT NULL,
+  `recommend` int DEFAULT '0',
+  `hit` int DEFAULT '0',
+  `contents` text,
+  `img` varchar(100) DEFAULT NULL,
+  `wTime` datetime DEFAULT CURRENT_TIMESTAMP,
+  `comment` int DEFAULT NULL,
+  `admin` int DEFAULT '0',
+  PRIMARY KEY (`no`),
+  KEY `board_id_fk` (`id`),
+  CONSTRAINT `board_id_fk` FOREIGN KEY (`id`) REFERENCES `user_info` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Dumping data for table `user_board`
 --
 
@@ -34,4 +58,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-12-22 21:34:05
+-- Dump completed on 2020-12-23 16:34:28

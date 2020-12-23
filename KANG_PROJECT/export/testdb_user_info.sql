@@ -16,6 +16,39 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `user_info`
+--
+
+DROP TABLE IF EXISTS `user_info`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `user_info` (
+  `id` varchar(20) NOT NULL,
+  `pw` varchar(20) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `person_num` char(13) NOT NULL,
+  `postcode` int DEFAULT NULL,
+  `address_1` varchar(50) DEFAULT NULL,
+  `address_2` varchar(50) DEFAULT NULL,
+  `detail_address` varchar(50) DEFAULT NULL,
+  `extra_address` varchar(30) DEFAULT NULL,
+  `phone_company` char(3) DEFAULT NULL,
+  `f_phone` int DEFAULT NULL,
+  `s_phone` int NOT NULL,
+  `t_phone` int NOT NULL,
+  `mail` varchar(30) NOT NULL,
+  `get_email` varchar(15) DEFAULT NULL,
+  `get_sns` varchar(15) DEFAULT NULL,
+  `gender` char(6) DEFAULT NULL,
+  `point` int DEFAULT '0',
+  `admin` int DEFAULT '0',
+  `createtime` datetime DEFAULT CURRENT_TIMESTAMP,
+  `profile` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Dumping data for table `user_info`
 --
 
@@ -34,4 +67,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-12-22 21:34:05
+-- Dump completed on 2020-12-23 16:34:29

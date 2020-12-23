@@ -16,6 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `user_coupon`
+--
+
+DROP TABLE IF EXISTS `user_coupon`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `user_coupon` (
+  `no` int NOT NULL AUTO_INCREMENT,
+  `id` varchar(20) DEFAULT NULL,
+  `market` varchar(20) DEFAULT NULL,
+  `item` varchar(20) DEFAULT NULL,
+  `img` varchar(50) DEFAULT NULL,
+  `start` datetime DEFAULT CURRENT_TIMESTAMP,
+  `end` datetime DEFAULT NULL,
+  PRIMARY KEY (`no`),
+  KEY `user_coupon_id` (`id`),
+  CONSTRAINT `user_coupon_id` FOREIGN KEY (`id`) REFERENCES `user_info` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Dumping data for table `user_coupon`
 --
 
@@ -34,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-12-22 21:34:05
+-- Dump completed on 2020-12-23 16:34:28

@@ -16,6 +16,30 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `comment`
+--
+
+DROP TABLE IF EXISTS `comment`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `comment` (
+  `no` int NOT NULL AUTO_INCREMENT,
+  `list_no` int DEFAULT NULL,
+  `id` varchar(20) DEFAULT NULL,
+  `profile` varchar(20) DEFAULT NULL,
+  `comment` text,
+  `wTime` datetime DEFAULT CURRENT_TIMESTAMP,
+  `groupNum` int DEFAULT '0',
+  `stepNum` int DEFAULT '0',
+  `indentNum` int DEFAULT '0',
+  `gender` char(6) DEFAULT NULL,
+  `admin` int DEFAULT '0',
+  PRIMARY KEY (`no`),
+  CONSTRAINT `comment_no` FOREIGN KEY (`no`) REFERENCES `user_board` (`no`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Dumping data for table `comment`
 --
 
@@ -34,4 +58,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-12-22 21:34:05
+-- Dump completed on 2020-12-23 16:34:28
