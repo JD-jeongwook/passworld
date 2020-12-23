@@ -39,6 +39,11 @@
     * 내가 게시판에 올린 사진을 한눈에 볼 수 있습니다.
   
   ![gallary](https://user-images.githubusercontent.com/75401960/102974475-f3c69280-4541-11eb-8dc3-b6e91b45e49e.gif)
+  
+  * 간편 예매
+    * 비행기 티켓을 간편하게 예매할 수 있습니다.
+    
+    ![Reservation](https://user-images.githubusercontent.com/75401960/102978713-47d47580-4548-11eb-86f7-cefd317439d1.gif)
 > The overriding design goal for Markdown's
 > formatting syntax is to make it as readable
 > as possible. The idea is that a
