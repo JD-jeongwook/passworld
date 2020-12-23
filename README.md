@@ -17,8 +17,9 @@
     -  [contextFile](https://github.com/JD-jeongwook/passworld/blob/main/KANG_PROJECT/context.xml)
     -  [Cos.jar](http://www.servlets.com/cos/) ,  [Jstl.jar](https://tomcat.apache.org/download-taglibs.cgi) , [Connector J](https://dev.mysql.com/downloads/connector/j/8.0.html)
 
-**쿼리문을 DB에 넣어주시고 필수Data 파일을  insert해주세요 ! 
-**보안을 위해 contextFile과 API key는 비공개 처리 했습니다. 
+**쿼리문을 DB에 꼭 넣어주세요.**
+
+**보안을 위해 contextFile은 비공개 처리 했습니다.**
 
 > The overriding design goal for Markdown's
 > formatting syntax is to make it as readable
