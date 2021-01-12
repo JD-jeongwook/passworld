@@ -1,3 +1,8 @@
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FJD-jeongwook%2Fpassworld&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
+[◀ 프로필로 이동](https://github.com/JD-jeongwook)            
+[◀ 저장소 바로가기](https://github.com/JD-jeongwook/passworld)
+
 ## PASS WORLD
 
 ### 프로젝트 설명
